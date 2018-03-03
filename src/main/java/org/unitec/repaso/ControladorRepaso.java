@@ -31,7 +31,7 @@ public class ControladorRepaso {
     
     //Buscar por ID
     @CrossOrigin
-    @RequestMapping(value = "/Repaso/{idRepaso}",method = RequestMethod.GET,headers = {"Accept=application/json"})
+    @RequestMapping(value = "/Repaso",method = RequestMethod.GET,headers = {"Accept=application/json"})
     public Repaso buscarId(String idRepaso){
         return repoRepa.findOne(idRepaso);
     }
